@@ -1,0 +1,244 @@
+/*-------------NAVBAR--------------*/
+.header {
+  z-index: 1500 !important;
+}
+.vm-top {
+  transition: all ease-in-out 0.2s;
+}
+.vm-top:hover {
+  transform: rotate(-10deg);
+}
+
+.modal button {
+  font-size: 1.2rem;
+  position: relative;
+}
+.modal button:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 254, 0.274);
+  transition: all 1s ease;
+}
+.modal button:hover:before {
+  width: 100%;
+}
+.form-label {
+  margin-bottom: 0 !important;
+}
+
+
+/*----------------CAROUSEL----------------*/
+.div-carousel {
+  text-align: center;
+}
+.poster-carousel {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+.poster-carousel:hover {
+  opacity: 0.5;
+}
+#carousel a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+/*END CAROUSEL*/
+
+/*------------------CATEGORIAS--------------*/
+.categoria {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.categoria:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.371);
+}
+/* END CATEGORIAS */
+
+/*-----------------CARDS-------------------*/
+.card {
+  width: 25%;
+}
+.card-header {
+  padding: 0 !important;
+}
+.card-title {
+  margin: 0;
+  text-align: center;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-text {
+  font-size: 12px;
+  flex-grow: 1;
+  line-height: 1.2;
+}
+/* END CARDS */
+
+/*-----------------PUBLICIDAD--------------*/
+.publicidad {
+  border: solid gray 1px;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.iconos-publicidad {
+  display: flex;
+  justify-content: end;
+}
+.cuerpo-publicidad p {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.bi-info-circle:hover,
+.bi-x-square:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+/* END PUBLICIDAD */
+
+/*---------------MEDIA QUERIES-----------------*/
+@media (min-width: 320px) {
+  .card-title {
+    font-size: 15px;
+  }
+  .card {
+    width: 45%;
+  }
+  .card-body {
+    padding: 0.2rem !important;
+  }
+}
+
+
+/*--------------FOOTER------------*/
+.footer-pag{
+    background-color: lightgray;
+    width: 100%;
+}
+.footer-pag .container-col{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 10px 0px;
+}
+.footer-pag .container-col .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-pag .container-col figure img{
+    width: 350px;
+
+}
+.footer-pag .container-col .box h2{
+    margin-bottom: 25px ;
+    font-size: 20px;
+    
+}
+.footer-pag .container-col .box p{
+    margin-bottom: 25px ;
+    font-size: 20px;
+}
+.footer-pag .container-col .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer-pag .container-col .red-social a:hover{
+    color: aqua;
+}
+
+.footer-pag .container-col .box .contact{
+    text-decoration: none;
+}
+
+.footer-pag .container-col .box .contact:hover{
+    color: aqua;
+}
+
+.footer-pag .container-col2{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footer-pag .container-col2 small{
+    font-size: 15px;
+}
+
+
+@media (max-width:902px){
+    .footer-pag .container-col{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-pag .container-col .red-social a{
+    
+        display: inline-flex;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: aliceblue;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width:768px){
+    .footer-pag .container-col{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-pag .container-col .red-social a{
+    
+        display: inline-flex;
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        color: aliceblue;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:576px) {
+    .footer-pag .container-col{
+        width: 90%;
+        grid-template-columns: repeat(1,3fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
