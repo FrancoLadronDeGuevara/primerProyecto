@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--LINKS-->
+  <link rel="stylesheet" href="../css/galeria.css" />
+  <link rel="shortcut icon" href="./assets/icon/icon-VM.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/bc750fce37.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--FIN LINKS-->
+</head>
+
+<body>
+  <!--COMIENZO NAVBAR-->
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-md bg-light">
+      <div class="container-fluid">
+
+        <a href="../index.html" class="d-flex flex-column">
+          <img src="../assets/logo/VM-top.png" class="vm-top" alt="vangamovies-top">
+          <img src="../assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item ms-md-5 fw-bolder me-5">
+              <a class="nav-link active" aria-current="page" href="../html/login.html">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item fw-bolder me-5">
+              <a class="nav-link" href="../html/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item fw-bolder">
+              <a class="nav-link" href="../html/acerca.html">Acerca de Nosotros</a>
+            </li>
+          </ul>
+          <!-- Button trigger modal -->
+          <button type="button" style="background-color: rgba(233, 46, 46, 0.815);border: none;" class="btn btn-primary"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Suscribirme
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--FIN NAVBAR-->
+
+    <!--COMIENZO MODAL-->
+    <div class="mod mt-1">
+
+
+      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese sus datos</h1>
+            </div>
+            <div class="modal-body">
+              <form method="get">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Ingrese su
+                    E-Mail</label>
+                  <input type="email" name="email" required class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">No compartiremos tu correo
+                    electronico.
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" required class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Deseo recibir
+                    notificaciones por
+                    E-mail</label>
+                </div>
+                <br>
+                <button formaction="../html/error.html" class="btn btn-primary">Suscribirme</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" style="background-color: rgba(214, 40, 40, 0.733);" class="btn btn-secondary"
+                data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIN MODAL-->
+  </header>
+  
+  <div class="container-fluid p-0">
+    <h2 class="text-center">Próximos Estrenos 2024</h2>
+
+    <div class="container-fluid d-flex flex-column flex-md-row flex-md-wrap">
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/intensamente2.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Intensamente 2</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Inside Out 2</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 12/06/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/kungfupanda4.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Kung Fu Panda 4</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Kung Fu Panda 4</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 08/03/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/captitanamerica4.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Capitan América 4</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Captain America - New World
+                  Order</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 01/05/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/misionimposible8.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Misión Imposible 8</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>MI - Dead Reckoning Part 2</small></i>
+            </li>
+            <li class="list-group-item">Fecha de estreno: 26/06/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/LFTR.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">El Señor De Los Anillos 4</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>LOTR - The War of the
+                  Rohirrim</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 10/04/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/sonic3.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Sonic 3</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Sonic The Hedgehog 3</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 18/12/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/gvsk2.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Godzilla Vs Kong 2</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Godzilla Vs Kong 2</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 15/03/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/gru4.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Gru - Mi Villano Favorito 4</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Despicable Me 4</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 03/07/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/elplanetadelossimios.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">El Planeta de los Simios 4</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Kingdom of the Planet of the
+                  Apes</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 22/05/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/avatar3.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Avatar 3</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Avatar 3</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 18/12/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/lossimuladores.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Los Simuladores</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Los Simuladores - La
+                  Película</small></i></li>
+            <li class="list-group-item">Fecha de estreno: 31/12/2024</li>
+            <li class="list-group-item">Origen: ARG</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="../assets/galeria/starwars.jpg" class="card-img-top" alt="..." />
+          <div class="card-header">
+            <h5 class="card-title">Star Wars - The Bounty</h5>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Titulo original</span><br><i><small>Star Wars - The Bounty</small></i>
+            </li>
+            <li class="list-group-item">Fecha de estreno: 30/06/2024</li>
+            <li class="list-group-item">Origen: USA</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--Aqui comienza el Footer-->
+  <footer class="footer-pag">
+    <div class="container-col">
+      <!--Logo-->
+      <div class="box col-md-6 mx-auto">
+        <a href="acerca.html">
+          <img src="../assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders" class="d-block img-fluid vangalogo">
+        </a>
+      </div>
+
+      <!--Redes sociales-->
+      <div class="box text-center">
+
+        <h2> Síguenos en Nuestras Redes</h2>
+        <div class="red-social">
+          <a href="https://www.facebook.com" class="fa-brands fa-facebook fs-3" target="_blank"></a>
+          <a href="https://www.instagram.com" class="fa-brands fa-instagram fs-3" target="_blank"></a>
+          <a href="https://www.twitter.com" class="fa-brands fa-twitter fs-3" target="_blank"></a>
+          <a href="https://www.linkedin.com" class="fa-brands fa-linkedin fs-3" target="_blank"></a>
+          <a href="https://rollingcodeschool.com" class="fa-solid fa-code fs-3" target="_blank"></a>
+        </div>
+      </div>
+
+
+      <!--Info adicional-->
+      <div class="box text-center">
+        <h2>Información Adicional</h2>
+        <a href="./terminos.html" class="contact">Términos y Condiciones</a><br>
+        <a href="./politica.html" class="contact">Política de Privacidad</a>
+      </div>
+
+    </div>
+    <div class="container-col2">
+      <small> Copyright <i class="fa-regular fa-copyright"></i> 2023 - <b>Vanga Movies</b> - Todos los derechos
+        reservados </small>
+    </div>
+
+  </footer>
+</body>
+
+</html>

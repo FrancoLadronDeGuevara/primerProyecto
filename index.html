@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANGA Movies</title>
+    <!--LINKS-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./assets/icon/icon-VM.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/bc750fce37.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--FIN LINKS-->
+</head>
+
+<body class="body">
+    <header class="header sticky-top">
+        <!--COMIENZO NAVBAR-->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+                <a href="#" class="d-flex flex-column">
+                    <img src="./assets/logo/VM-top.png" class="vm-top" alt="vangamovies-top">
+                    <img src="./assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item ms-md-5 fw-bolder me-5">
+                            <a class="nav-link active" aria-current="page" href="./html/login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item fw-bolder me-5">
+                            <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item fw-bolder">
+                            <a class="nav-link" href="./html/acerca.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" style="background-color: #002266;"
+                        class="btn btn-primary rounded efecto-boton fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Suscribirme
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!--FIN NAVBAR-->
+
+        <!--COMIENZO MODAL-->
+        <div class="mod mt-1">
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese sus datos</h1>
+                        </div>
+                        <div class="modal-body">
+                            <form method="get">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Ingrese su
+                                        E-Mail</label>
+                                    <input type="email" name="email" required class="form-control"
+                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text text-white">*No compartiremos tu correo
+                                        electronico.
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" required class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Deseo recibir
+                                        notificaciones por
+                                        E-mail</label>
+                                </div>
+                                <br>
+                                <button formaction="./html/error.html" style="background-color: #002266;" class="btn btn-primary fw-bold w-100 efecto-boton">Suscribirme</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"
+                                class="btn btn-dark efecto-boton" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FIN MODAL-->
+    </header>
+    <!--PRINCIPAL-->
+    <div class="container-fluid p-0">
+        <div id="carousel" class="carousel slide p-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <p class="text-center text-white fw-bold">VANGA MOVIES - ESTRENOS 2023</p>
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="row">
+                        <div class="col-6 col-md">
+                            <div class="div-carousel">
+                                
+                                <a href="./html/entradas/antman.html" class="d-none d-md-block"><img src="./assets/moviesImages/landscapePoster/antlandscape.jpg"
+                                    class="poster-carousel" alt="antmanquantumania">Ant-Man & The Wasp: <br>
+                                    Quantumania</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/babylonlandscape.jpg"
+                                    class="poster-carousel" alt="babylon">
+                                <a href="./html/error.html" class="d-none d-md-block">Babylon</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/deadpool3.jpg" class="poster-carousel"
+                                    alt="deadpool3marvel">
+                                <a href="./html/error.html" class="d-none d-md-block">Deadpool III</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/elementallandscape.jfif"
+                                    class="poster-carousel" alt="elementaldisney">
+                                <a href="./html/error.html" class="d-none d-md-block">Elemental <br> Disney</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/magicmikelandscape.jpg"
+                                    class="poster-carousel" alt="magicmikelastdance">
+                                <a href="./html/error.html" class="d-none d-md-block">Magic Mike: <br> Last Dance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row">
+                        <div class="col-6 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/barbielandscape.jpg"
+                                    class="poster-carousel" alt="barbiethemovie">
+                                <a href="./html/entradas/barbie.html" class="d-none d-md-block">Barbie The Movie</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/meganlandscape.jpg"
+                                    class="poster-carousel" alt="megan">
+                                <a href="./html/error.html" class="d-none d-md-block">Megan</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/gotglandscape.jpg"
+                                    class="poster-carousel" alt="guardiansofthegalaxyIII">
+                                <a href="./html/entradas/guardianes.html" class="d-none d-md-block">Guardianes de la Galaxia Vol. 3</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/creedlandscape.jpg"
+                                    class="poster-carousel" alt="creedIII">
+                                <a href="./html/entradas/creed.html" class="d-none d-md-block">Creed <br> III</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/scream6landscape.jpg"
+                                    class="poster-carousel" alt="scream6">
+                                <a href="./html/error.html" class="d-none d-md-block">Scream <br> VI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row">
+                        <div class="col-6 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/shazam2landscape.jpeg"
+                                    class="poster-carousel" alt="shazam2furyofthegods">
+                                <a href="./html/error.html" class="d-none d-md-block">Shazam 2: <br> Fury of the Gods</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/whalelandscape.jpg"
+                                    class="poster-carousel" alt="thewhale">
+                                <a href="./html/error.html" class="d-none d-md-block">The Whale</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/fortunelandscape.jpg"
+                                    class="poster-carousel" alt="operationfortune">
+                                <a href="./html/entradas/operacionfortune.html" class="d-none d-md-block">Operation Fortune: <br> Ruse de Guerre</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/mariolandscape.jpg"
+                                    class="poster-carousel" alt="supermariobrosthemovie">
+                                <a href="./html/entradas/mario.html" class="d-none d-md-block">Super Mario Bross: <br> The Movie</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md">
+                            <div class="div-carousel">
+                                <img src="./assets/moviesImages/landscapePoster/wicklandscape.jpg"
+                                    class="poster-carousel" alt="johnwick4">
+                                <a href="./html/error.html" class="d-none d-md-block">John Wick <br> 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0 my-5 d-flex flex-column flex-sm-column flex-md-row">
+        <div class="col-12 col-sm-12 col-md-8 main d-flex flex-wrap gap-3 justify-content-around">
+            <div class="card">
+                <img src="./assets/moviesImages/potraitPoster/antpotrait.jpg" class="card-img-top"
+                    alt="antmanquantumania">
+                <div class="card-header">
+                    <h6 class="card-title">Ant-Man & The Wasp:Quantumania</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Los superhéroes Scott y Cassie Lang, Hope van Dyne y sus padres, se
+                        encuentran
+                        accidentalmente atrapados en el reino cuántico y deben enfrentarse a un nuevo enemigo, Kang el
+                        Conquistador..</p>
+                    <a href="./html/entradas/antman.html" class="btn btn-secondary">Ver más...</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/moviesImages/potraitPoster/barbiepotrait.jpg" class="card-img-top"
+                    alt="barbiethemovie">
+                <div class="card-header">
+                    <h6 class="card-title">Barbie The Movie</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Después de ser expulsada de Barbieland por no ser una muñeca de
+                        aspecto
+                        perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad.</p>
+                    <a href="./html/entradas/barbie.html" class="btn btn-secondary">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/moviesImages/potraitPoster/creedpotrait.jpg" class="card-img-top" alt="creedIII">
+                <div class="card-header">
+                    <h6 class="card-title">Creed III</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Adonis Creed está prosperando en su carrera y en su vida familiar.
+                        Cuando un
+                        amigo de la infancia y antiguo prodigio del boxeo reaparece tras cumplir condena en la cárcel,
+                        está ansioso por demostrar que merece su oportunidad en el ring.</p>
+                    <a href="./html/entradas/creed.html" class="btn btn-secondary">Ver más...</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/moviesImages/potraitPoster/fortunepotrait.jpg" class="card-img-top"
+                    alt="fortunepotrait">
+                <div class="card-header">
+                    <h6 class="card-title">Operation Fortune: Ruse de Guerre</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">El espía de élite Orson Fortune debe localizar y detener la venta
+                        de una nueva
+                        y mortífera tecnología armamentística que maneja un multimillonario traficante de armas. Fortune
+                        y su equipo reclutan a la mayor estrella de Hollywood para que les ayude.</p>
+                    <a href="./html/entradas/operacionfortune.html" class="btn btn-secondary">Ver más...</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/moviesImages/potraitPoster/gotgpotrait.jpg" class="card-img-top"
+                    alt="guardiansofthegalaxyIII">
+                <div class="card-header">
+                    <h6 class="card-title">Guardianes de la Galaxia Vol. 3</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Peter Quill, todavía conmocionado por la pérdida de Gamora, debe
+                        reunir al
+                        equipo en torno a él para defender el universo mientras protege a uno de los suyos. Una misión
+                        que, si no se lleva a cabo con éxito, podría suponer el fin de los Guardianes tal y como los
+                        conocemos.</p>
+                    <a href="./html/entradas/guardianes.html" class="btn btn-secondary">Ver más...</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/moviesImages/potraitPoster/mariopotrait.jpg" class="card-img-top"
+                    alt="supermariobrosthemovie">
+                <div class="card-header">
+                    <h6 class="card-title">Super Mario Bross The Movie</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Adaptación de la serie de videojuegos de Nintendo. La película
+                        cuenta la
+                        historia de Mario y Luigi, dos hermanos que viajan a un mundo oculto para rescatar a la Princesa
+                        Peach, capturada por el malvado Rey Bowser.</p>
+                    <a href="./html/entradas/mario.html" class="btn btn-secondary">Ver más...</a>
+                </div>
+            </div>
+            <div class="w-100">
+                <nav aria-label="Botones de paginación">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">Atrás</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="./html/error.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="./html/error.html">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="./html/error.html">Siguiente</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container col-12 col-sm-12 col-md-4 gap-5 mt-4 mt-md-0 d-flex flex-column justify-content-between">
+            <div class="input-search">
+                <ul class="list-group">
+                    <li class="busqueda list-group-item d-flex justify-content-around align-items-center disabled"><span
+                            class="fw-bold">BUSQUEDA</span><i class="bi bi-search fs-4"></i></li>
+                    <li class="busqueda list-group-item">
+                        <div class="input-group">
+                            <input type="search" id="form1" class="form-control mb-3"
+                                placeholder="Buscá tu peli favorita" />
+                        </div>
+                        <a href="./html/error.html" class="btn btn-secondary w-100">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li class="busqueda list-group-item">
+                        <select class="form-select my-3" aria-label="Opciones">
+                            <option selected>Filtrar por idioma (cualquiera)</option>
+                            <option value="1">Inglés</option>
+                            <option value="2">Español</option>
+                            <option value="3">Castellano/Latino</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <ul class="list-group">
+                <li
+                    class="busqueda list-group-item d-flex justify-content-around align-items-center disabled categoria">
+                    <span class="fw-bold">CATEGORIAS</span>
+                    <i class="bi bi-folder2-open fs-4"></i>
+                </li>
+                <a href="./html/galeria.html" class="busqueda list-group-item categoria">
+                    Próximos estrenos!
+                    <i class="bi bi-film text-dark fs-5"></i>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Las más votadas!
+                    <i class="bi bi-star-fill text-warning fs-5"></i>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Favoritas de todos!
+                    <i class="bi bi-hand-thumbs-up-fill text-primary fs-5"></i>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Acción
+                    <span class="badge bg-primary rounded-pill">96</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Animación
+                    <span class="badge bg-primary rounded-pill">78</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Aventuras
+                    <span class="badge bg-primary rounded-pill">112</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Ciencia Ficción
+                    <span class="badge bg-primary rounded-pill">102</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Comedia
+                    <span class="badge bg-primary rounded-pill">85</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Drama
+                    <span class="badge bg-primary rounded-pill">114</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Fantasía
+                    <span class="badge bg-primary rounded-pill">65</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Musical
+                    <span class="badge bg-primary rounded-pill">43</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Suspenso
+                    <span class="badge bg-primary rounded-pill">69</span>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Terror
+                    <span class="badge bg-primary rounded-pill">90</span>
+                </a>
+            </ul>
+            <a href="https://rollingcodeschool.com/" target="_blank" class="publicidad rounded d-none d-md-block">
+                <div class="iconos-publicidad">
+                    <i class="bi bi-info-circle text-info"></i>
+                    <i class="bi bi-x-square ms-2 text-info"></i>
+                </div>
+                <p class="text-center">Rolling Code School</p>
+                <img src="./assets/publicidad/officeRC.jpeg" class="d-block w-100" alt="">
+                <p class="text-center fw-bolder">Aprendé a programar desde cero y sumate a la industria con mayor
+                    crecimiento</p>
+                <button class="btn btn-dark w-100">Abrir</button>
+            </a>
+            <a href="https://rollingcodeschool.com/" target="_blank"
+                class="publicidad bg-black rounded d-none d-md-block">
+                <div class="iconos-publicidad">
+                    <i class="bi bi-info-circle text-white"></i>
+                    <i class="bi bi-x-square ms-2 text-white"></i>
+                </div>
+                <div class="cuerpo-publicidad d-flex flex-column align-items-center">
+                    <p>Sólo el 1% de la población mundial puede ver la imágen
+                        oculta. Puedes?</p>
+                    <img src="./assets/publicidad/publi.jpg" class="d-block w-50" alt="imagenPublicidad">
+                    <p>¿PUEDES VERLO?</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- PRINCIPAL END -->
+
+    <!--Aqui comienza el Footer-->
+    <footer class="footer-pag">
+        <div class="container-col">
+            <!--Logo-->
+            <div class="box col-md-6 mx-auto">
+                <a href="html/acerca.html">
+                    <img src="./assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders" class="d-block img-fluid vangalogo">
+                </a>
+            </div>
+
+            <!--Redes sociales-->
+            <div class="box text-center">
+
+                <h2> Síguenos en Nuestras Redes</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa-brands fa-facebook fs-3" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa-brands fa-instagram fs-3" target="_blank"></a>
+                    <a href="https://www.twitter.com" class="fa-brands fa-twitter fs-3" target="_blank"></a>
+                    <a href="https://www.linkedin.com" class="fa-brands fa-linkedin fs-3" target="_blank"></a>
+                    <a href="https://rollingcodeschool.com" class="fa-solid fa-code fs-3" target="_blank"></a>
+                </div>
+            </div>
+
+
+            <!--Info adicional-->
+            <div class="box text-center">
+                <h2>Información Adicional</h2>
+                <a href="./html/terminos.html" class="contact">Términos y Condiciones</a><br>
+                <a href="./html/politica.html" class="contact">Política de Privacidad</a>
+            </div>
+
+        </div>
+        <div class="container-col2">
+            <small> Copyright <i class="fa-regular fa-copyright"></i> 2023 - <b>Vanga Movies</b> - Todos los derechos
+                reservados </small>
+        </div>
+
+    </footer>
+</body>
+
+</html>
