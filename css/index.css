@@ -7,6 +7,9 @@ background-attachment: fixed;
 .navbar, .footer-pag{
   background-color: #00226685;
 }
+.bi-list{
+  color: aliceblue !important;
+}
 .nav-link, .footer-pag{
   color: aliceblue !important;
   transition: all ease-in-out .2s !important;
@@ -18,7 +21,7 @@ background-attachment: fixed;
 }
 .modal-body, .modal-header, .modal-footer, .busqueda{
   background-color: #000022 !important;
-  color: aliceblue;
+  color: aliceblue !important;
 }
 
 
