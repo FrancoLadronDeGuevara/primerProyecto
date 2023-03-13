@@ -99,30 +99,21 @@
   line-height: 50px;
   text-align: center;
 }
-
 .footer-pag .container-col .red-social a:hover{
   color: aqua;
 }
-
 .footer-pag .container-col .box .contact{
   text-decoration: none;
 }
-
 .footer-pag .container-col .box .contact:hover{
   color: aqua;
 }
-
 .footer-pag .container-col2{
   padding: 0 10px;
   text-align: center;
 }
-
 .footer-pag .container-col2 small{
   font-size: 15px;
-}
-.vangalogo{
-animation: flip;
-animation-duration: 50s;
 }
 
 @media (max-width:902px){

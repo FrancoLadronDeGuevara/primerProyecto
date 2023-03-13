@@ -20,7 +20,7 @@
 <body class="body">
     <header class="header sticky-top">
         <!--COMIENZO NAVBAR-->
-        <nav class="navbar navbar-expand-md bg-light">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
 
                 <a href="#" class="d-flex flex-column">
@@ -46,8 +46,8 @@
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button type="button" style="background-color: rgba(233, 46, 46, 0.815);border: none;"
-                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" style="background-color: #002266;"
+                        class="btn btn-primary rounded efecto-boton fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Suscribirme
                     </button>
                 </div>
@@ -59,7 +59,7 @@
         <div class="mod mt-1">
 
 
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -73,7 +73,7 @@
                                         E-Mail</label>
                                     <input type="email" name="email" required class="form-control"
                                         id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">No compartiremos tu correo
+                                    <div id="emailHelp" class="form-text text-white">*No compartiremos tu correo
                                         electronico.
                                     </div>
                                 </div>
@@ -84,12 +84,12 @@
                                         E-mail</label>
                                 </div>
                                 <br>
-                                <button formaction="./html/error.html" class="btn btn-primary">Suscribirme</button>
+                                <button formaction="./html/error.html" style="background-color: #002266;" class="btn btn-primary fw-bold w-100 efecto-boton">Suscribirme</button>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" style="background-color: rgba(214, 40, 40, 0.733);"
-                                class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button"
+                                class="btn btn-dark efecto-boton" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -100,16 +100,16 @@
     </header>
     <!--PRINCIPAL-->
     <div class="container-fluid p-0">
-        <div id="carousel" class="carousel slide p-2 bg-secondary" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide p-2" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <p class="text-center text-white fw-bold">VANGA MOVIES - ESTRENOS 2023</p>
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="row">
                         <div class="col-6 col-md">
                             <div class="div-carousel">
-                                <img src="./assets/moviesImages/landscapePoster/antlandscape.jpg"
-                                    class="poster-carousel" alt="antmanquantumania">
-                                <a href="./html/entradas/antman.html" class="d-none d-md-block">Ant-Man & The Wasp: <br>
+                                
+                                <a href="./html/entradas/antman.html" class="d-none d-md-block"><img src="./assets/moviesImages/landscapePoster/antlandscape.jpg"
+                                    class="poster-carousel" alt="antmanquantumania">Ant-Man & The Wasp: <br>
                                     Quantumania</a>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
     </div>
 
     <div class="container-fluid p-0 my-5 d-flex flex-column flex-sm-column flex-md-row">
-        <div class="col-12 col-sm-12 col-md-8 bg-secondary d-flex flex-wrap gap-3 justify-content-around">
+        <div class="col-12 col-sm-12 col-md-8 main d-flex flex-wrap gap-3 justify-content-around">
             <div class="card">
                 <img src="./assets/moviesImages/potraitPoster/antpotrait.jpg" class="card-img-top"
                     alt="antmanquantumania">
@@ -238,7 +238,7 @@
                         encuentran
                         accidentalmente atrapados en el reino cuántico y deben enfrentarse a un nuevo enemigo, Kang el
                         Conquistador..</p>
-                    <a href="./html/entradas/antman.html" class="btn btn-primary">Ver más...</a>
+                    <a href="./html/entradas/antman.html" class="btn btn-secondary">Ver más...</a>
                 </div>
             </div>
             <div class="card">
@@ -251,7 +251,7 @@
                     <p class="card-text">Después de ser expulsada de Barbieland por no ser una muñeca de
                         aspecto
                         perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad.</p>
-                    <a href="./html/entradas/barbie.html" class="btn btn-primary">Ver más</a>
+                    <a href="./html/entradas/barbie.html" class="btn btn-secondary">Ver más</a>
                 </div>
             </div>
             <div class="card">
@@ -264,7 +264,7 @@
                         Cuando un
                         amigo de la infancia y antiguo prodigio del boxeo reaparece tras cumplir condena en la cárcel,
                         está ansioso por demostrar que merece su oportunidad en el ring.</p>
-                    <a href="./html/entradas/creed.html" class="btn btn-primary">Ver más...</a>
+                    <a href="./html/entradas/creed.html" class="btn btn-secondary">Ver más...</a>
                 </div>
             </div>
             <div class="card">
@@ -278,7 +278,7 @@
                         de una nueva
                         y mortífera tecnología armamentística que maneja un multimillonario traficante de armas. Fortune
                         y su equipo reclutan a la mayor estrella de Hollywood para que les ayude.</p>
-                    <a href="./html/entradas/operacionfortune.html" class="btn btn-primary">Ver más...</a>
+                    <a href="./html/entradas/operacionfortune.html" class="btn btn-secondary">Ver más...</a>
                 </div>
             </div>
             <div class="card">
@@ -293,7 +293,7 @@
                         equipo en torno a él para defender el universo mientras protege a uno de los suyos. Una misión
                         que, si no se lleva a cabo con éxito, podría suponer el fin de los Guardianes tal y como los
                         conocemos.</p>
-                    <a href="./html/entradas/guardianes.html" class="btn btn-primary">Ver más...</a>
+                    <a href="./html/entradas/guardianes.html" class="btn btn-secondary">Ver más...</a>
                 </div>
             </div>
             <div class="card">
@@ -307,7 +307,7 @@
                         cuenta la
                         historia de Mario y Luigi, dos hermanos que viajan a un mundo oculto para rescatar a la Princesa
                         Peach, capturada por el malvado Rey Bowser.</p>
-                    <a href="./html/entradas/mario.html" class="btn btn-primary">Ver más...</a>
+                    <a href="./html/entradas/mario.html" class="btn btn-secondary">Ver más...</a>
                 </div>
             </div>
             <div class="w-100">
@@ -329,19 +329,19 @@
         <div class="container col-12 col-sm-12 col-md-4 gap-5 mt-4 mt-md-0 d-flex flex-column justify-content-between">
             <div class="input-search">
                 <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-around align-items-center bg-light disabled"><span
+                    <li class="busqueda list-group-item d-flex justify-content-around align-items-center disabled"><span
                             class="fw-bold">BUSQUEDA</span><i class="bi bi-search fs-4"></i></li>
-                    <li class="list-group-item">
+                    <li class="busqueda list-group-item">
                         <div class="input-group">
                             <input type="search" id="form1" class="form-control mb-3"
                                 placeholder="Buscá tu peli favorita" />
                         </div>
-                        <a href="./html/error.html" class="btn btn-primary w-100">
+                        <a href="./html/error.html" class="btn btn-secondary w-100">
                             <i class="bi bi-search"></i>
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <select class="form-select my-3 bg-light" aria-label="Opciones">
+                    <li class="busqueda list-group-item">
+                        <select class="form-select my-3" aria-label="Opciones">
                             <option selected>Filtrar por idioma (cualquiera)</option>
                             <option value="1">Inglés</option>
                             <option value="2">Español</option>
@@ -352,59 +352,59 @@
             </div>
             <ul class="list-group">
                 <li
-                    class="list-group-item d-flex justify-content-around align-items-center disabled bg-light categoria">
+                    class="busqueda list-group-item d-flex justify-content-around align-items-center disabled categoria">
                     <span class="fw-bold">CATEGORIAS</span>
                     <i class="bi bi-folder2-open fs-4"></i>
                 </li>
-                <a href="./html/error.html" class="list-group-item categoria">
-                    Las más votadas!
-                    <i class="bi bi-star-fill text-warning fs-5"></i>
-                </a>
-                <a href="./html/error.html" class="list-group-item categoria">
-                    Favoritas de todos!
-                    <i class="bi bi-hand-thumbs-up-fill text-info fs-5"></i>
-                </a>
-                <a href="./html/galeria.html" class="list-group-item categoria">
+                <a href="./html/galeria.html" class="busqueda list-group-item categoria">
                     Próximos estrenos!
                     <i class="bi bi-film text-dark fs-5"></i>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Las más votadas!
+                    <i class="bi bi-star-fill text-warning fs-5"></i>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
+                    Favoritas de todos!
+                    <i class="bi bi-hand-thumbs-up-fill text-primary fs-5"></i>
+                </a>
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Acción
                     <span class="badge bg-primary rounded-pill">96</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Animación
                     <span class="badge bg-primary rounded-pill">78</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Aventuras
                     <span class="badge bg-primary rounded-pill">112</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Ciencia Ficción
                     <span class="badge bg-primary rounded-pill">102</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Comedia
                     <span class="badge bg-primary rounded-pill">85</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Drama
                     <span class="badge bg-primary rounded-pill">114</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Fantasía
                     <span class="badge bg-primary rounded-pill">65</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Musical
                     <span class="badge bg-primary rounded-pill">43</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Suspenso
                     <span class="badge bg-primary rounded-pill">69</span>
                 </a>
-                <a href="./html/error.html" class="list-group-item categoria">
+                <a href="./html/error.html" class="busqueda list-group-item categoria">
                     Terror
                     <span class="badge bg-primary rounded-pill">90</span>
                 </a>
