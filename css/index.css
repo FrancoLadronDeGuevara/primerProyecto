@@ -5,7 +5,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 }
 .navbar, .footer-pag{
-  background-color: #00226685;
+  background-color: #002266c6;
 }
 .bi-list{
   color: aliceblue !important;
@@ -67,7 +67,8 @@ background-attachment: fixed;
   margin-bottom: 0.5rem;
 }
 .poster-carousel:hover {
-  box-shadow: white 1px 1px 20px;
+  animation: headShake;
+  animation-duration: 1s;
 }
 #carousel a {
   text-decoration: none;
