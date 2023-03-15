@@ -20,97 +20,101 @@
 
 <body>
 
-  <!--COMIENZO NAVBAR-->
+  <!--COMIENZO NAVBAR Prueba rodrigo Git-->
   <header class="header sticky-top">
-    <nav class="navbar navbar-expand-md bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
 
-        <a href="../index.html" class="d-flex flex-column">
-          <img src="../assets/logo/VM-top.png" class="vm-top" alt="vangamovies-top">
-          <img src="../assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
-        </a>
+            <a href="../index.html" class="d-flex flex-column">
+                <img src="../assets/logo/VM-top.png" class="vm-top" alt="vangamovies-top">
+                <img src="../assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
+            </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item ms-md-5 fw-bolder me-5">
-              <a class="nav-link active" aria-current="page" href="./login.html">Iniciar Sesión</a>
-            </li>
-            <li class="nav-item fw-bolder me-5">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item fw-bolder">
-              <a class="nav-link" href="./acerca.html">Acerca de Nosotros</a>
-            </li>
-          </ul>
-          <!-- BOTON MODAL NAVBAR -->
-          <button type="button" style="background-color: rgba(233, 46, 46, 0.815);border: none;" class="btn btn-primary"
-            data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Suscribirme
-          </button>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=""><i class="bi bi-list"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ms-md-5 fw-bolder me-5">
+                        <a class="nav-link active" aria-current="page" href="./login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item fw-bolder me-5">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link" href="./acerca.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" style="background-color: #002266;"
+                    class="btn btn-primary rounded efecto-boton fw-bold" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Suscribirme
+                </button>
+            </div>
         </div>
-      </div>
     </nav>
+    <!--FIN NAVBAR-->
 
-    <!--COMIENZO MODAL NAVBAR-->
+    <!--COMIENZO MODAL-->
     <div class="mod mt-1">
-      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese sus datos</h1>
-            </div>
-            <div class="modal-body">
-              <form method="get">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Ingrese su
-                    E-Mail</label>
-                  <input type="email" name="email" required class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">No compartiremos tu correo
-                    electronico.
-                  </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese sus datos</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form method="get">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ingrese su
+                                    E-Mail</label>
+                                <input type="email" name="email" required class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text text-white">*No compartiremos tu correo
+                                    electronico.
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" required class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Deseo recibir
+                                    notificaciones por
+                                    E-mail</label>
+                            </div>
+                            <br>
+                            <button formaction="./error.html" style="background-color: #002266;"
+                                class="btn btn-primary fw-bold w-100 efecto-boton">Suscribirme</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark efecto-boton"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Deseo recibir
-                    notificaciones por
-                    E-mail</label>
-                </div>
-                <br>
-                <button formaction="./error.html" class="btn btn-primary">Suscribirme</button>
-              </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" style="background-color: rgba(214, 40, 40, 0.733);" class="btn btn-secondary"
-                data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!--FIN MODAL NAVBAR-->
-  </header>
-  <!--FIN NAVBAR-->
+</header>
+<!--FIN MODAL-->
 
   <!--CONTENEDOR PRINCIPAL-->
   <div class="container-fluid d-flex justify-content-center py-3">
     <div class="container-fluid col-sm-8 col-lg-6">
       <!--FORMULARIO-->
-      <form method="GET" class="form-control d-flex flex-column justify-content-between h-100">
+      <form method="GET" class="form-control d-flex flex-column justify-content-between h-100 formulario">
         <h1 class="display-5 text-center mb-4 mb-lg-0 fw-bold">Iniciar Sesión</h1>
 
         <div class="form-floating mb-3 mb-lg-0">
           <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com"
             required>
-          <label for="floatingInput">Email</label>
+          <label class="labelfloat" for="floatingInput">Email</label>
         </div>
         <div class="form-floating mb-3 mb-lg-0">
           <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-          <label for="floatingPassword">Password</label>
+          <label class="labelfloat" for="floatingPassword">Password</label>
         </div>
 
         <button formaction="./error.html" class="btn btn-primary w-100 mb-3 mb-lg-0">Ingresar</button>
@@ -142,13 +146,13 @@
         <!-- BOTONES DE REGISTRO -->
         <div class="btn-registro d-flex flex-column align-items-center">
           <a href="./error.html"
-            class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-between">Crear tu cuenta en
+            class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-between fw-bold btn-log">Crear tu cuenta en
             VM <i class="bi bi-person-add text-warning fs-4"></i></a>
           <a href="./error.html"
-            class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-between my-4">Ingresar con
+            class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-between fw-bold my-4 btn-log">Ingresar con
             Google <i class="bi bi-google text-danger-emphasis fs-4"></i></a>
           <a href="./error.html"
-            class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-between">Ingresar con
+            class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-between fw-bold btn-log">Ingresar con
             Facebook
             <i class="bi bi-facebook text-primary fs-4"></i></a>
         </div>
@@ -167,7 +171,7 @@
 
 
   <!--MODAL CONTRASEÑA-->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-con" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -185,40 +189,45 @@
   </div>
 
 
-  <!--FOOTER-->
+  <!--Aqui comienza el Footer-->
   <footer class="footer-pag">
     <div class="container-col">
-      <!--LOGO-->
-      <div class="box col-md-6 mx-auto">
-        <a href="acerca.html">
-          <img src="../assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders" class="d-block img-fluid">
-        </a>
-      </div>
-      <!--REDES SOCIALES-->
-      <div class="box text-center">
-        <h2> Síguenos en Nuestras Redes</h2>
-        <div class="red-social">
-          <a href="https://www.facebook.com" class="fa-brands fa-facebook fs-3" target="_blank"></a>
-          <a href="https://www.instagram.com" class="fa-brands fa-instagram fs-3" target="_blank"></a>
-          <a href="https://www.twitter.com" class="fa-brands fa-twitter fs-3" target="_blank"></a>
-          <a href="https://www.linkedin.com" class="fa-brands fa-linkedin fs-3" target="_blank"></a>
-          <a href="https://rollingcodeschool.com" class="fa-solid fa-code fs-3" target="_blank"></a>
+        <!--Logo-->
+        <div class="box col-md-6 mx-auto">
+            <a href="acerca.html">
+                <img src="../assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders"
+                    class="d-block img-fluid vangalogo">
+            </a>
         </div>
-      </div>
-      <!--INFO ADICIONAL-->
-      <div class="box text-center">
-        <h2>Información Adicional</h2>
-        <a href="#" class="contact">Términos y Condiciones</a><br>
-        <a href="#" class="contact">Política de Privacidad</a>
-      </div>
+
+        <!--Redes sociales-->
+        <div class="box text-center">
+
+            <h2> Síguenos en Nuestras Redes</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com" class="fa-brands fa-facebook fs-3" target="_blank"></a>
+                <a href="https://www.instagram.com" class="fa-brands fa-instagram fs-3" target="_blank"></a>
+                <a href="https://www.twitter.com" class="fa-brands fa-twitter fs-3" target="_blank"></a>
+                <a href="https://www.linkedin.com" class="fa-brands fa-linkedin fs-3" target="_blank"></a>
+                <a href="https://rollingcodeschool.com" class="fa-solid fa-code fs-3" target="_blank"></a>
+            </div>
+        </div>
+
+
+        <!--Info adicional-->
+        <div class="box text-center">
+            <h2>Información Adicional</h2>
+            <a href="./terminos.html" class="contact">Términos y Condiciones</a><br>
+            <a href="./politica.html" class="contact">Política de Privacidad</a>
+        </div>
+
     </div>
-    <!--COPYRIGHT-->
     <div class="container-col2">
-      <small> Copyright <i class="fa-regular fa-copyright"></i> 2023 - <b>Vanga Movies</b> - Todos los derechos
-        reservados </small>
+        <small> Copyright <i class="fa-regular fa-copyright"></i> 2023 - <b>Vanga Movies</b> - Todos los derechos
+            reservados </small>
     </div>
-  </footer>
-  <!--FIN FOOTER-->
+
+</footer>
 
 
 
