@@ -17,37 +17,40 @@
     <!--FIN LINKS-->
 </head>
 
-<body>
-    <!--COMIENZO NAVBAR-->
+<body class="body">
+    
     <header class="header sticky-top">
-        <nav class="navbar navbar-expand-md bg-light">
+        <!--COMIENZO NAVBAR Prueba rodrigo Git-->
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
 
-                <a href="../../index.html" class="d-flex flex-column">
+                <a href="#" class="d-flex flex-column">
                     <img src="../../assets/logo/VM-top.png" class="vm-top" alt="vangamovies-top">
-                    <img src="../../assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
+                    <img src="../../assets/logo/VM-bot.png" class="vm-bot"
+                        alt="vangamovies-bottom">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class=""><i class="bi bi-list"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item ms-md-5 fw-bolder me-5">
-                            <a class="nav-link active" aria-current="page" href="../login.html">Iniciar Sesión</a>
+                            <a class="nav-link active" aria-current="page" href="./html/login.html">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item fw-bolder me-5">
-                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                            <a class="nav-link" href="./html/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item fw-bolder">
-                            <a class="nav-link" href="../acerca.html">Acerca de Nosotros</a>
+                            <a class="nav-link" href="./html/acerca.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button type="button" style="background-color: rgba(233, 46, 46, 0.815);border: none;"
-                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" style="background-color: #002266;"
+                        class="btn btn-primary rounded efecto-boton fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Suscribirme
                     </button>
                 </div>
@@ -59,7 +62,7 @@
         <div class="mod mt-1">
 
 
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -73,7 +76,7 @@
                                         E-Mail</label>
                                     <input type="email" name="email" required class="form-control"
                                         id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">No compartiremos tu correo
+                                    <div id="emailHelp" class="form-text text-white">*No compartiremos tu correo
                                         electronico.
                                     </div>
                                 </div>
@@ -84,18 +87,19 @@
                                         E-mail</label>
                                 </div>
                                 <br>
-                                <button formaction="../error.html" class="btn btn-primary">Suscribirme</button>
+                                <button formaction="./html/error.html" style="background-color: #002266;"
+                                    class="btn btn-primary fw-bold w-100 efecto-boton">Suscribirme</button>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" style="background-color: rgba(214, 40, 40, 0.733);"
-                                class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-dark efecto-boton"
+                                data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--FIN MODAL-->
+        <!--FIN NAVBAR-->
     </header>
 
     <!--CUERPO PRINCIPAL DE LA ENTRADA-->
@@ -131,7 +135,7 @@
         <!--OFFCANVAS DE REPARTO Y DATOS TECNICOS-->
         <div class="container-fluid row align-items-center justify-content-center p-4 gap-3">
             <button class="btn btn-primary col-4 mb-4" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Reparto
+                data-bs-target="#offcanvasWithBothOptions" style="background-color: transparent;" aria-controls="offcanvasWithBothOptions">Reparto
                 Principal</button>
 
             <div class="offcanvas offcanvas-start mt-5 pt-5 " data-bs-scroll="true" tabindex="-1"
@@ -189,7 +193,7 @@
         
 
             <button class="btn btn-primary col-4 mb-4" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Datos Tecnicos</button>
+                data-bs-target="#offcanvasRight" style="background-color: transparent" aria-controls="offcanvasRight">Datos Tecnicos</button>
 
             <div class="offcanvas offcanvas-end mt-5 pt-5" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">

@@ -17,37 +17,40 @@
     <!--FIN LINKS-->
 </head>
 
-<body>
-    <!--COMIENZO NAVBAR-->
+<body class="body">
+
     <header class="header sticky-top">
-        <nav class="navbar navbar-expand-md bg-light">
+        <!--COMIENZO NAVBAR Prueba rodrigo Git-->
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
 
-                <a href="../../index.html" class="d-flex flex-column">
+                <a href="#" class="d-flex flex-column">
                     <img src="../../assets/logo/VM-top.png" class="vm-top" alt="vangamovies-top">
-                    <img src="../../assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
+                    <img src="../../assets/logo/VM-bot.png" class="vm-bot"
+                        alt="vangamovies-bottom">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class=""><i class="bi bi-list"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item ms-md-5 fw-bolder me-5">
-                            <a class="nav-link active" aria-current="page" href="../login.html">Iniciar Sesión</a>
+                            <a class="nav-link active" aria-current="page" href="./html/login.html">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item fw-bolder me-5">
-                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                            <a class="nav-link" href="./html/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item fw-bolder">
-                            <a class="nav-link" href="../acerca.html">Acerca de Nosotros</a>
+                            <a class="nav-link" href="./html/acerca.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button type="button" style="background-color: rgba(233, 46, 46, 0.815);border: none;"
-                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" style="background-color: #002266;"
+                        class="btn btn-primary rounded efecto-boton fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Suscribirme
                     </button>
                 </div>
@@ -59,7 +62,7 @@
         <div class="mod mt-1">
 
 
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -73,7 +76,7 @@
                                         E-Mail</label>
                                     <input type="email" name="email" required class="form-control"
                                         id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">No compartiremos tu correo
+                                    <div id="emailHelp" class="form-text text-white">*No compartiremos tu correo
                                         electronico.
                                     </div>
                                 </div>
@@ -84,18 +87,19 @@
                                         E-mail</label>
                                 </div>
                                 <br>
-                                <button formaction="../error.html" class="btn btn-primary">Suscribirme</button>
+                                <button formaction="./html/error.html" style="background-color: #002266;"
+                                    class="btn btn-primary fw-bold w-100 efecto-boton">Suscribirme</button>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" style="background-color: rgba(214, 40, 40, 0.733);"
-                                class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-dark efecto-boton"
+                                data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--FIN MODAL-->
+        <!--FIN NAVBAR-->
     </header>
 
     <!--CUERPO PRINCIPAL DE LA ENTRADA-->
@@ -103,8 +107,8 @@
         <div class="cotainerImg flex-container ">
             <h1>Ant-Man and the Wasp: Quantumania</h1>
 
-            <img src="../../assets/reparto/WPMH2GFAIRAXRDLLVDNTL2QUQU.jpg" class="img-fluid w-75 h-50 mt-5 mb-5"
-                alt="antmanquantumania">
+            <img src="../../assets/reparto/WPMH2GFAIRAXRDLLVDNTL2QUQU.jpg"
+                class="img-fluid w-75 h-50 mt-5 mb-5" alt="...">
 
             <p><b>A</b>nt-Man and The Wasp: Quantumania ya está disponible en cines, sin embargo, muchos de los
                 seguidores del MCU temían a principios de la semana por esta nueva película debido a la calificación que
@@ -147,7 +151,8 @@
         <!--OFFCANVAS DE REPARTO Y DATOS TECNICOS-->
         <div class="container-fluid row align-items-center justify-content-center p-4 gap-3">
             <button class="btn btn-primary col-4" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Reparto
+                data-bs-target="#offcanvasWithBothOptions" style="background-color: transparent;"
+                aria-controls="offcanvasWithBothOptions">Reparto
                 Principal</button>
 
             <div class="offcanvas offcanvas-start mt-5 pt-5" data-bs-scroll="true" tabindex="-1"
@@ -159,8 +164,8 @@
 
                 <div class="offcanvas-body row align-items-start  gap-3">
                     <div class="card " style="width:8rem;">
-                        <img src="../../assets/reparto/1200px-Paul_Rudd_2_SDCC_2014.jpg" class="card-img-top"
-                            style="height: 139px;width: 102px;" alt="...">
+                        <img src="../../assets/reparto/1200px-Paul_Rudd_2_SDCC_2014.jpg"
+                            class="card-img-top" style="height: 139px;width: 102px;" alt="...">
                         <div class="card-body">
                             <p class="card-text">Paul Rudd</p>
                         </div>
@@ -182,8 +187,8 @@
                     </div>
 
                     <div class="card " style="width:8rem;">
-                        <img src="../../assets/reparto/471px-Bill_Murray_2018.jpg" style="height: 139px;width: 102px;"
-                            alt="...">
+                        <img src="../../assets/reparto/471px-Bill_Murray_2018.jpg"
+                            style="height: 139px;width: 102px;" alt="...">
                         <div class="card-body">
                             <p class="card-text">Bill Murray</p>
                         </div>
@@ -211,7 +216,8 @@
 
 
             <button class="btn btn-primary col-4" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Datos Tecnicos</button>
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                style="background-color: transparent;">Datos Tecnicos</button>
 
             <div class="offcanvas offcanvas-end mt-5 pt-5" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
@@ -351,45 +357,7 @@
     </div>
     <!--FIN COMENTARIOS DE USUARIOS-->
 
-    <!--Aqui comienza el Footer-->
-    <footer class="footer-pag">
-        <div class="container-col">
-            <!--Logo-->
-            <div class="box col-md-6 mx-auto">
-                <a href="../acerca.html">
-                    <img src="../../assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders"
-                        class="d-block img-fluid vangalogo">
-                </a>
-            </div>
 
-            <!--Redes sociales-->
-            <div class="box text-center">
-
-                <h2> Síguenos en Nuestras Redes</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com" class="fa-brands fa-facebook fs-3" target="_blank"></a>
-                    <a href="https://www.instagram.com" class="fa-brands fa-instagram fs-3" target="_blank"></a>
-                    <a href="https://www.twitter.com" class="fa-brands fa-twitter fs-3" target="_blank"></a>
-                    <a href="https://www.linkedin.com" class="fa-brands fa-linkedin fs-3" target="_blank"></a>
-                    <a href="https://rollingcodeschool.com" class="fa-solid fa-code fs-3" target="_blank"></a>
-                </div>
-            </div>
-
-
-            <!--Info adicional-->
-            <div class="box text-center">
-                <h2>Información Adicional</h2>
-                <a href="../terminos.html" class="contact">Términos y Condiciones</a><br>
-                <a href="../politica.html" class="contact">Política de Privacidad</a>
-            </div>
-
-        </div>
-        <div class="container-col2">
-            <small> Copyright <i class="fa-regular fa-copyright"></i> 2023 - <b>Vanga Movies</b> - Todos los derechos
-                reservados </small>
-        </div>
-
-    </footer>
 
 </body>
 
