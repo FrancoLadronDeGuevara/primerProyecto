@@ -8,19 +8,19 @@
     <title>VANGA Movies-Contacto</title>
     <!--LINKS-->
     <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="shortcut icon" href="../assets/icon/icon-VM.ico"
-        type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/bc750fce37.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/icon/icon-VM.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/bc750fce37.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!--FIN LINKS-->
 </head>
 
 <body>
-    <!--COMIENZO NAVBAR-->
+    <!--COMIENZO NAVBAR Prueba rodrigo Git-->
     <header class="header sticky-top">
-        <nav class="navbar navbar-expand-md bg-light">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
 
                 <a href="../index.html" class="d-flex flex-column">
@@ -28,10 +28,10 @@
                     <img src="../assets/logo/VM-bot.png" class="vm-bot" alt="vangamovies-bottom">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class=""><i class="bi bi-list"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto">
@@ -46,17 +46,19 @@
                         </li>
                     </ul>
                     <!-- Button trigger modal -->
-                    <button type="button" style="background-color: rgba(233, 46, 46, 0.815);border: none;"
-                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" style="background-color: #002266;"
+                        class="btn btn-primary rounded efecto-boton fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Suscribirme
                     </button>
                 </div>
             </div>
         </nav>
+        <!--FIN NAVBAR-->
 
-        <!--COMIENZO MODAL NAVBAR-->
+        <!--COMIENZO MODAL-->
         <div class="mod mt-1">
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -70,37 +72,37 @@
                                         E-Mail</label>
                                     <input type="email" name="email" required class="form-control"
                                         id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">No compartiremos tu correo
+                                    <div id="emailHelp" class="form-text text-white">*No compartiremos tu correo
                                         electronico.
                                     </div>
                                 </div>
                                 <div class="mb-3 form-check">
-                                    <input type="checkbox" name="email" required class="form-check-input" id="exampleCheck1">
+                                    <input type="checkbox" required class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Deseo recibir
                                         notificaciones por
                                         E-mail</label>
                                 </div>
                                 <br>
-                                <button formaction="./error.html" type="submit" class="btn btn-primary">Suscribirme</button>
+                                <button formaction="./error.html" style="background-color: #002266;"
+                                    class="btn btn-primary fw-bold w-100 efecto-boton">Suscribirme</button>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" style="background-color: rgba(214, 40, 40, 0.733);"
-                                class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-dark efecto-boton"
+                                data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--FIN MODAL NAVBAR-->
     </header>
-    <!--FIN NAVBAR-->
+    <!--FIN MODAL-->
 
     <!-- Formulario Contacto  -->
     <div class="container-fluid d-flex flex-column flex-lg-row my-5">
         <div class="container col-12 col-lg-6 border border-1 border-secondary rounded py-5">
-            <h1 class="text-center">Contactate con nosotros</h1>
-            <p class="text-center">
+            <h1 class="text-center text-white">Contactate con nosotros</h1>
+            <p class="text-center text-white">
                 Dejanos tu mensaje!
             </p>
             <form method="get" class="formulario">
@@ -120,7 +122,7 @@
                     <textarea class="form-control text-area" rows="5" placeholder="Mi consulta es por..." required></textarea>
                 </div>
                 <div class="mb-3">
-                    <button formaction="./error.html" class="btn btn-danger w-100">Enviar Consulta</button>
+                    <button formaction="./error.html" class="btn btn-primary w-100">Enviar Consulta</button>
                 </div>
             </form>
         </div>
@@ -133,17 +135,20 @@
 
 
 
-    <!--FOOTER-->
+    <!--Aqui comienza el Footer-->
     <footer class="footer-pag">
         <div class="container-col">
-            <!--LOGO-->
+            <!--Logo-->
             <div class="box col-md-6 mx-auto">
                 <a href="acerca.html">
-                    <img src="../assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders" class="d-block img-fluid">
+                    <img src="../assets/logo/logoVG-noBG.png" alt="Logo Vanga Coders"
+                        class="d-block img-fluid vangalogo">
                 </a>
             </div>
-            <!--REDES SOCIALES-->
+
+            <!--Redes sociales-->
             <div class="box text-center">
+
                 <h2> Síguenos en Nuestras Redes</h2>
                 <div class="red-social">
                     <a href="https://www.facebook.com" class="fa-brands fa-facebook fs-3" target="_blank"></a>
@@ -153,26 +158,22 @@
                     <a href="https://rollingcodeschool.com" class="fa-solid fa-code fs-3" target="_blank"></a>
                 </div>
             </div>
-            <!--INFO ADICIONAL-->
+
+
+            <!--Info adicional-->
             <div class="box text-center">
                 <h2>Información Adicional</h2>
                 <a href="./terminos.html" class="contact">Términos y Condiciones</a><br>
                 <a href="./politica.html" class="contact">Política de Privacidad</a>
             </div>
+
         </div>
-        <!--COPYRIGHT-->
         <div class="container-col2">
             <small> Copyright <i class="fa-regular fa-copyright"></i> 2023 - <b>Vanga Movies</b> - Todos los derechos
                 reservados </small>
         </div>
-    </footer>
-    <!--FIN FOOTER-->
 
-    <!--INICIO LINK BOOSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <!--FIN LINK BOOSTRAP JS-->
+    </footer>
 </body>
 
 </html>
